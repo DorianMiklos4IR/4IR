@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt ('Podaj pierwszą liczbę:');
+        let b = prompt ('Podaj drugą liczbę:');
+        let znak = prompt ('Podaj znak działania:')
+        let wynik;
+
+        switch (znak)
+        {
+            case'+':
+                wynik=parseInt(a)+parseInt(b);
+            break
+            case'-':
+                wynik=parseInt(a)-parseInt(b)
+            break
+            case'*':
+                wynik=parseInt(a)*parseInt(b)
+            break
+            case'/':
+                wynik=parseInt(a)/parseInt(b)
+            default:
+                wynik=' Nie odnotowuje działania'
+        }
+
+        // if (znak==='+')
+        // {
+        //     wynik=parseInt(a)+parseInt(b);
+        // }
+        // else if(znak==='-')
+        // {
+        //     wynik=parseInt(a)-parseInt(b);
+        // }
+        // else if(znak==='*')
+        // {
+        //     wynik=parseInt(a)*parseInt(b);
+        // }
+        // else if(znak==='/')
+        // {
+        //     wynik=parseInt(a)/parseInt(b);
+        // }
+
+        console.log(wynik);
+        alert("końcowy:"+ wynik)
+        document.write("wynik końcowy równy:" + wynik)
+
+    </script>
+    <h1>Dzień dobry</h1>
+</body>
+</html>
