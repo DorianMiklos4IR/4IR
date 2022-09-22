@@ -3,15 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>zwykła</h1>
-    <h2>normalna</h2>
-    <h3>stronka</h3>
-    <h4>na</h4>
-    <h5>potrzebę</h5>
-    <h6>lekcji</h6>
+    <script>
+        let a = prompt ('Podaj pierwszą liczbę:');
+        let b = prompt ('Podaj drugą liczbę:');
+        let znak = prompt ('Podaj znak działania:')
+        let wynik;
+        if (znak==='+')
+        {
+            wynik=parseInt(a)+parseInt(b);
+        }
+        else if(znak==='-')
+        {
+            wynik=parseInt(a)-parseInt(b);
+        }
+        else if(znak==='*')
+        {
+            wynik=parseInt(a)*parseInt(b);
+        }
+        else 
+        {
+            wynik=parseInt(a)/parseInt(b);
+        }
+
+        console.log(wynik);
+        alert("końcowy:"+ wynik)
+        document.write("wynik końcowy równy:" + wynik)
+
+    </script>
+    <h1>Dzień dobry</h1>
 </body>
 </html>
